@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+background-image: url('3.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.header {
+    overflow: hidden;
+    /* background-color: #333; */
+    color: white;
+    padding: 10px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    max-width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+border-radius: 27px;
+border: 3px solid yellow;
+}
+
+.navbar {
+    position: absolute;
+    left: 30%;
+    transform: translateX(-50%);
+    top: 7%;
+    transform: translateY(-50%);
+    font-size: 26px;
+}
+
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+.navbar li a:hover, .navbarli a.active{
+    text-decoration: underline;
+    color: hotpink;
+}
+
+.search {
+    float: right;
+    text-align: right;
+
+}
+
+.search input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    right: 10%;
+    transform: translateX(-50%);
+    top: 7%;
+    transform: translateY(-50%);
+
+}
+
+.search button {
+    padding: 5px 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+    transform: translateX(-50%);
+    top: 7%;
+    transform: translateY(-50%);
+}
+
+.container{
+    border: 2px solid white;
+    color: white;
+    margin:10px 80px;
+    padding: 45px;
+    width: 50%;
+    border-radius: 28px;
+}
+.form-group input{
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 1px;
+    border: 2px solid  black;
+    margin: 3px auto;
+    font-size: 25px;
+    border-radius: 8px;
+}
+.container h1{
+    text-align: center;
+}
+.container button{
+    display: block ;
+    width: 75%;
+    margin:20px auto;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    border-radius: 30px; 
+}
+
+</style>
+<body>
+<header>
+    <div class="header">
+        <div class="logo">
+            <img src="2.jpg" alt="Logo">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </div>
+</header>
+<div class="container">
+ <h1> Come And Join The Best Gym Of Your City</h1>
+<form action="noaction.php" >
+    <div class="form-group">
+        <input type="text" name="" placeholder=" Your Name">
+    </div>
+        <div class="form-group">
+        <input type="text" name="" placeholder=" Your Age">
+
+    </div>
+        <div class="form-group">
+        <input type="text" name="" placeholder=" Your Gender">
+
+    </div>
+        <div class="form-group">
+        <input type="number" name="" placeholder=" Your Number">
+
+    </div>
+    <button class="btn">SUBMIT</button>
+</form>
+
+</div>
+
+</body>
+</html>
